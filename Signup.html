@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Nanum+Gothic&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Vibe</title>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="mobile">
+        <img src="images/ic_menu.svg" alt="hamburger" class="menu">
+      </div>
+      <a href="index.html" class="mobile"><img src="https://e7.pngegg.com/pngimages/461/347/png-clipart-fitness-logo-creative-fitness-logo-ribbon-physical-fitness.pn" alt="logo" class="logo"></a>
+      <div class="desktop">
+        <img class="close mobile" src="images/cross-pattern-2.svg" alt="">
+        <a href="index.html"><img class="logo" src="https://e7.pngegg.com/pngimages/461/347/png-clipart-fitness-logo-creative-fitness-logo-ribbon-physical-fitness.png" alt="logo"></a>
+        <ul>
+          <li class="orange"><a href="signup.html">Signup</a></li>
+          <li><a href="about.html">About</a></li>
+       <li><a href="index.html">Home</a></li>
+        </ul>
+         
+      </div>
+    </nav>
+  </header>
+  <main>
+    <style>
+    body {
+        background-color: brown;
+    }
+</style>
+      <h1 style="text-align: center;">Fitness Vibe</h1>
+    <main> 
+  <section>
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="process_form.php" method="post" onsubmit="return validateLogin()">
+
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username">
+            <span id="loginUsernameError" class="error"></span>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password">
+            <span id="loginPasswordError" class="error"></span>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="process_form.php" method="post" onsubmit="return validateSignUp()">
+
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="signup-username">
+            <span id="usernameError" class="error"></span>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="signup-password">
+            <span id="passwordError" class="error"></span>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <span id="confirmPasswordError" class="error"></span>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <span id="dobError" class="error"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            <span id="phoneError" class="error"></span>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <!-- Link to JavaScript files -->
+    <script src="script.js"></script>
+  </form>
+  </section>
+
+</main>
+</body>
+</html>
